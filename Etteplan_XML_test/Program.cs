@@ -15,7 +15,7 @@ bool IsValidChoice;
 string choiceOfId;
 string displayString = "Please choose a number between 1 and 4: ";
 string targetValue;
-
+https://open.spotify.com/track/6syEBcinz3tRLPwM9Kdemo
 // Display welcome message and ask for user input
 GetWelcomeMsg();
 GetUserInput();
@@ -29,7 +29,7 @@ void GetWelcomeMsg()
     Console.WriteLine("_____________________________________________\n");
     Console.WriteLine("There are currently available info on the following id's:\n");
     Console.WriteLine($"1. {idOne}");
-    Console.WriteLine($"2. {idTwo}");
+    Console.WriteLine($"2. {idTwo} (Save-to-file available)");
     Console.WriteLine($"3. {idThree}");
     Console.WriteLine($"4. {idFour}\n");
 }
