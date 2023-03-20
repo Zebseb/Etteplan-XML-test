@@ -75,7 +75,7 @@ void GetUserInput()
 void GetTargetValue(string id)
 {
     choiceOfId = id;
-    targetValue = xmlReader.GetElementById(choiceOfId);
+    targetValue = xmlReader.GetTargetValueById(choiceOfId);
 
     if (choiceOfId == idTwo)
     {
@@ -93,7 +93,6 @@ void DisplayTargetValue(string value)
 {
     GetWelcomeMsg();
     Console.WriteLine($"The target value is: {value}\n");
-    
     ContinueOrExitApp();
 }
 
@@ -103,10 +102,10 @@ async Task SaveToFileAsync(string value)
     GetWelcomeMsg();
     Console.WriteLine($"Saving the target value to a .txt file...");
     await File.WriteAllTextAsync("Targetvalue.txt", value);
-    Console.WriteLine("\nDone! The file was saved to \"...bin\\debug\\net7.0\".");
-    Console.ReadKey();
+    Console.WriteLine("\nDone! The file was saved to \"...bin\\debug\\net7.0\".\n");
 }
 
+// Ask user to continue or exit app
 void ContinueOrExitApp()
 {
     Console.Write("Press \"y\" for another value or \"x\" to exit the app: ");
