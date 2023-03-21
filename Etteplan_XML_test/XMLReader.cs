@@ -15,12 +15,14 @@ namespace Etteplan_XML_test
     {
         // Creates a new property of a XDocument
         public XDocument xmlDoc { get; set; } = new();
-        string xmlFile = "XMLFile1.xml";
+        private string xmlFile = "XMLFile1.xml";
 
         // Load info from the xml file to the XDocument
         public XMLReader()
         {
-            XDocument? xmlDocument = XDocument.Load(Path.Combine(Environment.CurrentDirectory, xmlFile));
+            string path = Path.Combine(Environment.CurrentDirectory, xmlFile);
+
+            XDocument? xmlDocument = XDocument.Load(path);
             xmlDoc = xmlDocument;
         }
 
