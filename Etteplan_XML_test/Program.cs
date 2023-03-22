@@ -15,7 +15,7 @@ bool IsValidChoice;
 string choiceOfId;
 string displayString = "Please choose a number between 1 and 4: ";
 string targetValue;
-https://open.spotify.com/track/6syEBcinz3tRLPwM9Kdemo
+
 // Display welcome message and ask for user input
 GetWelcomeMsg();
 GetUserInput();
