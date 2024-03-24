@@ -1,2 +1,2 @@
 # Etteplan_XML_test
- Test for internship at Etteplan
+ Test for and internship at Etteplan.
